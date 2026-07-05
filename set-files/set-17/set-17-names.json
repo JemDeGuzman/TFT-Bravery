@@ -1,0 +1,633 @@
+{
+    "champions": [
+        {
+            "id" : 1,
+            "name": "Aatrox",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/aatrox.png",
+            "synergies": [
+                "N.O.V.A.",
+                "Bastion"
+            ],
+            "cost": 1
+        },
+        {
+            "id" : 2,
+            "name": "Akali",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/akali.png",
+            "synergies": [
+                "N.O.V.A.",
+                "Marauder"
+            ],
+            "cost": 2
+        },
+        {
+            "id" : 3,
+            "name": "Aurelion Sol",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/aurelionsol.png",
+            "synergies": [
+                "Mecha",
+                "Conduit"
+            ],
+            "cost": 4
+        },
+        {
+            "id" : 4,
+            "name": "Aurora",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/aurora.png",
+            "synergies": [
+                "Anima",
+                "Voyager"
+            ],
+            "cost": 3
+        },
+        {
+            "id" : 5,
+            "name": "Bard",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/bard.png",
+            "synergies": [
+                "Meeple",
+                "Conduit"
+            ],
+            "cost": 5
+        },
+        {
+            "id" : 6,
+            "name": "Bel'Veth",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/belveth.png",
+            "synergies": [
+                "Primordian",
+                "Challenger",
+                "Marauder"
+            ],
+            "cost": 2
+        },
+        {
+            "id" : 7,
+            "name": "Blitzcrank",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/blitzcrank.png",
+            "synergies": [
+                "Party Animal",
+                "Space Groove",
+                "Vanguard"
+            ],
+            "cost": 5
+        },
+        {
+            "id" : 8,
+            "name": "Briar",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/briar.png",
+            "synergies": [
+                "Anima",
+                "Primordian",
+                "Marauder"
+            ],
+            "cost": 1
+        },
+        {
+            "id" : 9,
+            "name": "Caitlyn",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/caitlyn.png",
+            "synergies": [
+                "N.O.V.A.",
+                "Fateweaver"
+            ],
+            "cost": 1
+        },
+        {
+            "id" : 10,
+            "name": "Cho'Gath",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/chogath.png",
+            "synergies": [
+                "Dark Star",
+                "Brawler"
+            ],
+            "cost": 1
+        },
+        {
+            "id" : 11,
+            "name": "Corki",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/corki.png",
+            "synergies": [
+                "Meeple",
+                "Fateweaver"
+            ],
+            "cost": 4
+        },
+        {
+            "id" : 12,
+            "name": "Diana",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/diana.png",
+            "synergies": [
+                "Arbiter",
+                "Challenger"
+            ],
+            "cost": 3
+        },
+        {
+            "id" : 13,
+            "name": "Ezreal",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/ezreal.png",
+            "synergies": [
+                "Timebreaker",
+                "Sniper"
+            ],
+            "cost": 1
+        },
+        {
+            "id" : 14,
+            "name": "Fiora",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/fiora.png",
+            "synergies": [
+                "Divine Duelist",
+                "Anima",
+                "Marauder"
+            ],
+            "cost": 5
+        },
+        {
+            "id" : 15,
+            "name": "Fizz",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/fizz.png",
+            "synergies": [
+                "Meeple",
+                "Rogue"
+            ],
+            "cost": 3
+        },
+        {
+            "id" : 16,
+            "name": "Gnar",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/gnar.png",
+            "synergies": [
+                "Meeple",
+                "Sniper"
+            ],
+            "cost": 2
+        },
+        {
+            "id" : 17,
+            "name": "Gragas",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/gragas.png",
+            "synergies": [
+                "Psionic",
+                "Brawler"
+            ],
+            "cost": 2
+        },
+        {
+            "id" : 18,
+            "name": "Graves",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/graves.png",
+            "synergies": [
+                "Factory New"
+            ],
+            "cost": 5
+        },
+        {
+            "id" : 19,
+            "name": "Gwen",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/gwen.png",
+            "synergies": [
+                "Space Groove",
+                "Rogue"
+            ],
+            "cost": 2
+        },
+        {
+            "id" : 20,
+            "name": "Illaoi",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/illaoi.png",
+            "synergies": [
+                "Anima",
+                "Vanguard",
+                "Shepherd"
+            ],
+            "cost": 3
+        },
+        {
+            "id" : 21,
+            "name": "Jax",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/jax.png",
+            "synergies": [
+                "Stargazer",
+                "Bastion"
+            ],
+            "cost": 2
+        },
+        {
+            "id" : 22,
+            "name": "Jhin",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/jhin.png",
+            "synergies": [
+                "Dark Star",
+                "Eradicator",
+                "Sniper"
+            ],
+            "cost": 5
+        },
+        {
+            "id" : 23,
+            "name": "Jinx",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/jinx.png",
+            "synergies": [
+                "Anima",
+                "Challenger"
+            ],
+            "cost": 2
+        },
+        {
+            "id" : 24,
+            "name": "Kai'sa",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/kaisa.png",
+            "synergies": [
+                "Dark Star",
+                "Rogue"
+            ],
+            "cost": 3
+        },
+        {
+            "id" : 25,
+            "name": "Karma",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/karma.png",
+            "synergies": [
+                "Dark Star",
+                "Voyager"
+            ],
+            "cost": 4
+        },
+        {
+            "id" : 26,
+            "name": "Kindred",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/kindred.png",
+            "synergies": [
+                "N.O.V.A.",
+                "Challenger"
+            ],
+            "cost": 4
+        },
+        {
+            "id" : 27,
+            "name": "LeBlanc",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/leblanc.png",
+            "synergies": [
+                "Arbiter",
+                "Shepherd"
+            ],
+            "cost": 4
+        },
+        {
+            "id" : 28,
+            "name": "Leona",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/leona.png",
+            "synergies": [
+                "Arbiter",
+                "Vanguard"
+            ],
+            "cost": 1
+        },
+        {
+            "id" : 29,
+            "name": "Lissandra",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/lissandra.png",
+            "synergies": [
+                "Dark Star",
+                "Shepherd",
+                "Replicator"
+            ],
+            "cost": 1
+        },
+        {
+            "id" : 30,
+            "name": "Lulu",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/lulu.png",
+            "synergies": [
+                "Stargazer",
+                "Replicator"
+            ],
+            "cost": 3
+        },
+        {
+            "id" : 31,
+            "name": "Maokai",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/maokai.png",
+            "synergies": [
+                "Stargazer",
+                "Brawler"
+            ],
+            "cost": 3
+        },
+        {
+            "id" : 32,
+            "name": "Master Yi",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/masteryi.png",
+            "synergies": [
+                "Psionic",
+                "Marauder"
+            ],
+            "cost": 4
+        },
+        {
+            "id" : 33,
+            "name": "Meepsie",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/meepsie.png",
+            "synergies": [
+                "Meeple",
+                "Shepherd",
+                "Voyager"
+            ],
+            "cost": 2
+        },
+        {
+            "id" : 34,
+            "name": "Milio",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/milio.png",
+            "synergies": [
+                "Timebreaker",
+                "Fateweaver"
+            ],
+            "cost": 2
+        },
+        {
+            "id" : 35,
+            "name": "Miss Fortune",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/missfortune.png",
+            "synergies": [
+                "Gun Goddess",
+                "Challenger",
+                "Conduit",
+                "Replicator"
+            ],
+            "cost": 3
+        },
+        {
+            "id" : 36,
+            "name": "Mordekaiser",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/mordekaiser.png",
+            "synergies": [
+                "Dark Star",
+                "Vanguard"
+            ],
+            "cost": 2
+        },
+        {
+            "id" : 37,
+            "name": "Morgana",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/morgana.png",
+            "synergies": [
+                "Dark Lady"
+            ],
+            "cost": 4
+        },
+        {
+            "id" : 38,
+            "name": "Nami",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/nami.png",
+            "synergies": [
+                "Space Groove",
+                "Replicator"
+            ],
+            "cost": 4
+        },
+        {
+            "id" : 39,
+            "name": "Nasus",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/nasus.png",
+            "synergies": [
+                "Space Groove",
+                "Vanguard"
+            ],
+            "cost": 1
+        },
+        {
+            "id" : 40,
+            "name": "Nunu",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/nunu.png",
+            "synergies": [
+                "Stargazer",
+                "Vanguard"
+            ],
+            "cost": 4
+        },
+        {
+            "id" : 41,
+            "name": "Ornn",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/ornn.png",
+            "synergies": [
+                "Space Groove",
+                "Bastion"
+            ],
+            "cost": 3
+        },
+        {
+            "id" : 42,
+            "name": "Pantheon",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/pantheon.png",
+            "synergies": [
+                "Timebreaker",
+                "Brawler",
+                "Replicator"
+            ],
+            "cost": 2
+        },
+        {
+            "id" : 43,
+            "name": "Poppy",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/poppy.png",
+            "synergies": [
+                "Meeple",
+                "Bastion"
+            ],
+            "cost": 1
+        },
+        {
+            "id" : 44,
+            "name": "Pyke",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/pyke.png",
+            "synergies": [
+                "Psionic",
+                "Voyager"
+            ],
+            "cost": 2
+        },
+        {
+            "id" : 45,
+            "name": "Rammus",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/rammus.png",
+            "synergies": [
+                "Meeple",
+                "Bastion"
+            ],
+            "cost": 4
+        },
+        {
+            "id" : 46,
+            "name": "Rek'Sai",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/reksai.png",
+            "synergies": [
+                "Primordian",
+                "Brawler"
+            ],
+            "cost": 1
+        },
+        {
+            "id" : 47,
+            "name": "Rhaast",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/diana.png",
+            "synergies": [
+                "Redeemer"
+            ],
+            "cost": 3
+        },
+        {
+            "id" : 48,
+            "name": "Riven",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/riven.png",
+            "synergies": [
+                "Timebreaker",
+                "Rogue"
+            ],
+            "cost": 4
+        },
+        {
+            "id" : 49,
+            "name": "Samira",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/samira.png",
+            "synergies": [
+                "Space Groove",
+                "Sniper"
+            ],
+            "cost": 3
+        },
+        {
+            "id" : 50,
+            "name": "Shen",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/shen.png",
+            "synergies": [
+                "Bulwark",
+                "Bastion"
+            ],
+            "cost": 5
+        },
+        {
+            "id" : 51,
+            "name": "Sona",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/sona.png",
+            "synergies": [
+                "Commander",
+                "Psionic",
+                "Shepherd"
+            ],
+            "cost": 5
+        },
+        {
+            "id" : 52,
+            "name": "Tahm Kench",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/tahmkench.png",
+            "synergies": [
+                "Oracle",
+                "Brawler"
+            ],
+            "cost": 4
+        },
+        {
+            "id" : 53,
+            "name": "Talon",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/talon.png",
+            "synergies": [
+                "Stargazer",
+                "Rogue"
+            ],
+            "cost": 1
+        },
+        {
+            "id" : 54,
+            "name": "Teemo",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/teemo.png",
+            "synergies": [
+                "Space Groove",
+                "Shepherd"
+            ],
+            "cost": 1
+        },
+        {
+            "id" : 55,
+            "name": "The Mighty Mech",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/the-mighty-mech.png",
+            "synergies": [
+                "Mecha",
+                "Voyager"
+            ],
+            "cost": 4
+        },
+        {
+            "id" : 56,
+            "name": "Twisted Fate",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/twistedfate.png",
+            "synergies": [
+                "Arbiter",
+                "Challenger"
+            ],
+            "cost": 3
+        },
+        {
+            "id" : 57,
+            "name": "Urgot",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/urgot.png",
+            "synergies": [
+                "Mecha",
+                "Brawler",
+                "Marauder"
+            ],
+            "cost": 3
+        },
+        {
+            "id" : 58,
+            "name": "Veigar",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/veigar.png",
+            "synergies": [
+                "Meeple",
+                "Replicator"
+            ],
+            "cost": 1
+        },
+        {
+            "id" : 59,
+            "name": "Vex",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/vex.png",
+            "synergies": [
+                "Doomer"
+            ],
+            "cost": 5
+        },
+        {
+            "id" : 60,
+            "name": "Viktor",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/viktor.png",
+            "synergies": [
+                "Psionic",
+                "Conduit"
+            ],
+            "cost": 3
+        },
+        {
+            "id" : 61,
+            "name": "Xayah",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/xayah.png",
+            "synergies": [
+                "Stargazer",
+                "Sniper"
+            ],
+            "cost": 4
+        },
+        {
+            "id" : 62,
+            "name": "Zoe",
+            "icon": "https://cdn.mobalytics.gg/assets/tft/images/champions/icons/set17/zoe.png",
+            "synergies": [
+                "Arbiter",
+                "Conduit"
+            ],
+            "cost": 2
+        }
+    ]
+}

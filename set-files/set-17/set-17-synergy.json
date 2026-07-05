@@ -1,0 +1,173 @@
+{
+    "origins": [
+        {
+            "id": 1,
+            "name": "Anima",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-anima.svg"
+        },
+        {
+            "id": 2,
+            "name": "Arbiter",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-arbiter.svg"
+        },
+        {
+            "id": 3,
+            "name": "Dark Star",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-dark-star.svg"
+        },
+        {
+            "id": 4,
+            "name": "Mecha",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-mecha.svg"
+        },
+        {
+            "id": 5,
+            "name": "Meeple",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-meeple.svg"
+        },
+        {
+            "id": 6,
+            "name": "N.O.V.A.",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-nova.svg"
+        },
+        {
+            "id": 7,
+            "name": "Primordian",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-primordian.svg"
+        },
+        {
+            "id": 8,
+            "name": "Psionic",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-psionic.svg"
+        },
+        {
+            "id": 9,
+            "name": "Stargazer",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-stargazer.svg"
+        },
+        {
+            "id": 10,
+            "name": "Timebreaker",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-timebreaker.svg"
+        }
+    ],
+    "classes": [
+        {
+            "id": 1,
+            "name": "Bastion",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-bastion.svg"
+        },
+        {
+            "id": 2,
+            "name": "Brawler",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-brawler.svg"
+        },
+        {
+            "id": 3,
+            "name": "Challenger",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-challenger.svg"
+        },
+        {
+            "id": 4,
+            "name": "Conduit",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-conduit.svg"
+        },
+        {
+            "id": 5,
+            "name": "Fateweaver",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-fateweaver.svg"
+        },
+        {
+            "id": 6,
+            "name": "Marauder",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-marauder.svg"
+        },
+        {
+            "id": 7,
+            "name": "Replicator",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-replicator.svg"
+        },
+        {
+            "id": 8,
+            "name": "Rogue",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-rogue.svg"
+        },
+        {
+            "id": 9,
+            "name": "Shepherd",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-shepherd.svg"
+        },
+        {
+            "id": 10,
+            "name": "Sniper",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-sniper.svg"
+        },
+        {
+            "id": 11,
+            "name": "Vanguard",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-vanguard.svg"
+        },
+        {
+            "id": 12,
+            "name": "Voyager",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-voyager.svg"
+        }
+    ],
+    "uniques": [
+        {   
+            "id": 1,
+            "name": "Bulwark",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-bulwark.svg"
+        },
+        {
+            "id": 2,
+            "name": "Commander",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-commander.svg"
+        },
+        {
+            "id": 3,
+            "name": "Dark Lady",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-dark-lady.svg"
+        },
+        {
+            "id": 4,
+            "name": "Divine Duelist",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-divine-duelist.svg"
+        },
+        {
+            "id": 5,
+            "name": "Doomer",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-doomer.svg"
+        },
+        {
+            "id": 6,
+            "name": "Eradicator",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-eradicator.svg"
+        },
+        {
+            "id": 7,
+            "name": "Factory New",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-factory-new.svg"
+        },
+        {
+            "id": 8,
+            "name": "Gun Goddess",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-gun-goddess.svg"
+        },
+        {
+            "id": 9,
+            "name": "Oracle",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-oracle.svg"
+        },
+        {
+            "id": 10,
+            "name": "Party Animal",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-party-animal.svg"
+        },
+        {
+            "id": 11,
+            "name": "Redeemer",
+            "icon": "https://cdn.mobalytics.gg/assets/common/icons/tft-synergies-set17/24-redeemer.svg"
+        }
+    ]
+}
