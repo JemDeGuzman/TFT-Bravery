@@ -109,13 +109,22 @@
             box-shadow: 0 1px 3px var(--badge-shadow);
             transition: background-color 0.3s ease, color 0.3s ease;
         }
+
+        .trait-badge img {
+            filter: brightness(0) saturate(100%) invert(20%);
+            transition: filter 0.3s ease; /* Makes theme transition smooth */
+        }
+
+        [data-theme="dark"] .trait-badge img {
+            filter: brightness(0) saturate(100%) invert(100%);
+        }
     </style>
 </head>
 <body>
 
     <button class="theme-toggle" id="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
 
-    <h1>Multi-Set Randomizer</h1>
+    <h1>TFT Bravery</h1>
 
     <div class="controls">
         <button class="set-btn active" onclick="switchSet('set-17', event)">Set 17</button>
