@@ -2,144 +2,208 @@ let membersData = [];
 let originsData = [];
 let classesData = [];
 let uniquesData = [];
-let chosen = null;
+
+// Separate pools
+let mainChampionsPool = [];
+let uniqueChampionsPool = [];
+
+const EXCLUDED_UNIQUE_NAMES = ["Rhaast", "Tahm Kench", "Morgana", "Graves", "Vex", "Shen"];
 let currentSetName = 'set-17';
 
-// 1. Function to load data dynamically (Using Promise.all to prevent race conditions)
 function loadSetData(setName) {
     currentSetName = setName;
     
-    const fetchChampions = fetch(`./set-files/${currentSetName}/${currentSetName}-names.json`)
-        .then(res => {
-            if (!res.ok) throw new Error("Champions file not found");
-            return res.json();
-        });
+    const fetchChampions = fetch(`./set-files/${currentSetName}/${currentSetName}-names.json`).then(res => res.json());
+    const fetchSynergies = fetch(`./set-files/${currentSetName}/${currentSetName}-synergy.json`).then(res => res.json());
 
-    const fetchSynergies = fetch(`./set-files/${currentSetName}/${currentSetName}-synergy.json`)
-        .then(res => {
-            if (!res.ok) throw new Error("Synergies file not found");
-            return res.json();
-        });
-
-    // Wait until BOTH files are successfully loaded
     Promise.all([fetchChampions, fetchSynergies])
         .then(([champData, synData]) => {
-            // Validate Champion Data
-            if (!champData.champions || champData.champions.length === 0) {
-                throw new Error("Champions array is empty");
-            }
-            // Validate Synergy Data
-            if (!synData.origins || !synData.classes || !synData.uniques) {
-                throw new Error("Synergy structures are incomplete");
-            }
-
-            // Assign to global variables
-            membersData = champData.champions;
             originsData = synData.origins;
             classesData = synData.classes;
             uniquesData = synData.uniques;
+            membersData = champData.champions;
 
-            // Show UI and roll the first random champion
+            // Split the roster into Main and Excluded Unique pools
+            mainChampionsPool = membersData.filter(c => !EXCLUDED_UNIQUE_NAMES.includes(c.name));
+            uniqueChampionsPool = membersData.filter(c => EXCLUDED_UNIQUE_NAMES.includes(c.name));
+
             showCardContent(); 
-            chosen = pickRandomMember(); 
+            rollAllPools(); 
         })
         .catch(error => {
-            console.warn(`Failed to load ${setName}:`, error.message);
-            membersData = [];
-            originsData = [];
-            classesData = [];
-            uniquesData = [];
-            showUnavailableMessage(); // Show error layout
+            console.error("Error configuration loading failed:", error);
+            showUnavailableMessage();
         });
 }
 
-// 2. Function to select and display a random item
-function pickRandomMember() {
-    if (membersData.length === 0) return null;
+function rollAllPools() {
+    if (mainChampionsPool.length === 0) return;
 
-    const randomIndex = Math.floor(Math.random() * membersData.length);
-    const selectedChampion = membersData[randomIndex];
+    // 1. Roll Primary Champion
+    const randomMainIdx = Math.floor(Math.random() * mainChampionsPool.length);
+    const mainChamp = mainChampionsPool[randomMainIdx];
+    displayMainChampion(mainChamp);
 
-    // Update Text and Character Image (using local path updated by download script)
-    document.getElementById('display-name').textContent = selectedChampion.name;
-    document.getElementById('display-image').src = selectedChampion.icon;
-    document.getElementById('display-image').alt = selectedChampion.name;
+    // 2. Roll Minor Unique Champion Companion (with a chance to roll nothing)
+    if (uniqueChampionsPool.length > 0) {
+        // We create a pool that includes the real unique units + an empty choice
+        // Adjust the number of nulls if you want a higher/lower chance of rolling "Nothing"
+        const uniqueRollOptions = [...uniqueChampionsPool, null]; 
+        
+        const randomUniqueIdx = Math.floor(Math.random() * uniqueRollOptions.length);
+        const uniqueChamp = uniqueRollOptions[randomUniqueIdx];
 
-    // Clear previous synergies UI to prepare for rendering local trait images
-    const rolesContainer = document.getElementById('display-roles');
-    rolesContainer.innerHTML = ''; 
-
-    // Match text synergy strings with their local image data
-    selectedChampion.synergies.forEach(synergyName => {
-        // Look through all three downloaded lists for a name match
-        const foundTrait = originsData.find(t => t.name === synergyName) ||
-                           classesData.find(t => t.name === synergyName) ||
-                           uniquesData.find(t => t.name === synergyName);
-
-        if (foundTrait) {
-            // Create a wrapper container for a clean UI item layout
-            const traitBadge = document.createElement('span');
-            traitBadge.className = 'trait-badge';
-            traitBadge.style.display = 'inline-flex';
-            traitBadge.style.alignItems = 'center';
-            traitBadge.style.marginRight = '10px';
-
-            // Create the local image icon element
-            const iconImg = document.createElement('img');
-            iconImg.src = foundTrait.icon; // Uses local path like: ./images/traits/bastion.svg
-            iconImg.alt = foundTrait.name;
-            iconImg.style.width = '24px';
-            iconImg.style.height = '24px';
-            iconImg.style.marginRight = '5px';
-
-            // Create text element next to the image
-            const textSpan = document.createElement('span');
-            textSpan.textContent = foundTrait.name;
-
-            traitBadge.appendChild(iconImg);
-            traitBadge.appendChild(textSpan);
-            rolesContainer.appendChild(traitBadge);
+        const minorContainer = document.getElementById('minor-unique-card');
+        
+        if (uniqueChamp) {
+            // A real unique champion was rolled -> Show the card and populate it
+            minorContainer.classList.remove('hidden');
+            displayMinorUniqueChampion(uniqueChamp);
         } else {
-            // Fallback to text if the trait icon somehow wasn't found in your JSON arrays
-            const textSpan = document.createElement('span');
-            textSpan.textContent = synergyName + ' ';
-            rolesContainer.appendChild(textSpan);
+            // The empty slot was rolled -> Hide the minor card cleanly
+            minorContainer.classList.add('hidden');
         }
-    });
-
-    return selectedChampion;
+    }
 }
 
-// 3. UI Toggle: Show the normal content
+function displayMainChampion(selectedChampion) {
+    document.getElementById('display-name').textContent = selectedChampion.name;
+    
+    const mainImg = document.getElementById('display-image');
+    mainImg.src = selectedChampion.icon;
+    mainImg.alt = selectedChampion.name;
+    
+    // Set cost rarity border on main card frame
+    const cardElement = document.getElementById('card');
+    cardElement.className = `cost-${selectedChampion.cost}`;
+
+    const normalTraits = selectedChampion.synergies.filter(trait => !uniquesData.some(u => u.name === trait));
+    const rolesContainer = document.getElementById('display-roles');
+    const displayGroupsSection = document.getElementById('display-groups-section');
+    
+    rolesContainer.innerHTML = '';
+    displayGroupsSection.innerHTML = '';
+
+    // Render badges below main profile picture
+    selectedChampion.synergies.forEach(traitName => {
+        rolesContainer.appendChild(createTraitBadge(traitName));
+    });
+
+    // Randomize up to two standard traits to build rows out of
+    let traitsToDisplay = [...normalTraits];
+    if (traitsToDisplay.length > 2) {
+        traitsToDisplay = traitsToDisplay.sort(() => 0.5 - Math.random()).slice(0, 2);
+    }
+
+    traitsToDisplay.forEach(traitName => {
+        const groupBlock = document.createElement('div');
+        groupBlock.className = 'synergy-group-block';
+
+        const groupHeader = document.createElement('div');
+        groupHeader.className = 'synergy-group-header';
+        groupHeader.appendChild(createTraitBadge(traitName));
+        
+        const headerText = document.createElement('span');
+        headerText.textContent = ` Trait Roster`;
+        groupHeader.appendChild(headerText);
+        groupBlock.appendChild(groupHeader);
+
+        const teamGrid = document.createElement('div');
+        teamGrid.className = 'mini-champ-grid';
+
+        // Filter and SORT teammates from cost level 1 through 5
+        const teammates = membersData
+            .filter(champ => champ.synergies.includes(traitName))
+            .sort((a, b) => a.cost - b.cost);
+
+        teammates.forEach(champ => {
+            teamGrid.appendChild(createMiniChampCard(champ));
+        });
+
+        groupBlock.appendChild(teamGrid);
+        displayGroupsSection.appendChild(groupBlock);
+    });
+}
+
+function displayMinorUniqueChampion(uniqueChampion) {
+    const minorContainer = document.getElementById('minor-unique-card');
+    minorContainer.className = `minor-card cost-${uniqueChampion.cost}`;
+    
+    document.getElementById('minor-image').src = uniqueChampion.icon;
+    document.getElementById('minor-image').alt = uniqueChampion.name;
+    document.getElementById('minor-name').textContent = uniqueChampion.name;
+
+    const minorRoles = document.getElementById('minor-roles');
+    minorRoles.innerHTML = '';
+    uniqueChampion.style = "";
+    
+    uniqueChampion.synergies.forEach(traitName => {
+        minorRoles.appendChild(createTraitBadge(traitName));
+    });
+}
+
+function findTraitData(traitName) {
+    return originsData.find(t => t.name === traitName) ||
+           classesData.find(t => t.name === traitName) ||
+           uniquesData.find(t => t.name === traitName);
+}
+
+function createTraitBadge(traitName) {
+    const foundTrait = findTraitData(traitName);
+    const traitBadge = document.createElement('span');
+    traitBadge.className = 'trait-badge';
+
+    if (foundTrait) {
+        const iconImg = document.createElement('img');
+        iconImg.src = foundTrait.icon;
+        iconImg.alt = foundTrait.name;
+        
+        const textSpan = document.createElement('span');
+        textSpan.textContent = foundTrait.name;
+
+        traitBadge.appendChild(iconImg);
+        traitBadge.appendChild(textSpan);
+    } else {
+        textSpan.textContent = traitName;
+    }
+    return traitBadge;
+}
+
+function createMiniChampCard(champion) {
+    const miniCard = document.createElement('div');
+    miniCard.className = `mini-champ-card cost-${champion.cost}`;
+
+    const img = document.createElement('img');
+    img.src = champion.icon;
+    img.alt = champion.name;
+
+    const name = document.createElement('div');
+    name.className = 'mini-champ-name';
+    name.textContent = champion.name;
+
+    miniCard.appendChild(img);
+    miniCard.appendChild(name);
+    return miniCard;
+}
+
 function showCardContent() {
-    document.getElementById('card-content').classList.remove('hidden');
+    document.getElementById('app-playground').classList.remove('hidden');
     document.getElementById('unavailable-message').classList.add('hidden');
     document.getElementById('random-btn').disabled = false;
 }
 
-// 4. UI Toggle: Show the "unavailable" interface
 function showUnavailableMessage() {
-    document.getElementById('card-content').classList.add('hidden');
+    document.getElementById('app-playground').classList.add('hidden');
     document.getElementById('unavailable-message').classList.remove('hidden');
     document.getElementById('random-btn').disabled = true;
 }
 
-// 5. Triggered when clicking the top set selection buttons
-function switchSet(setName) {
+function switchSet(setName, event) {
     const buttons = document.querySelectorAll('.set-btn');
     buttons.forEach(btn => btn.classList.remove('active'));
-    
-    if (event && event.target) {
-        event.target.classList.add('active');
-    }
-
+    if (event && event.target) event.target.classList.add('active');
     loadSetData(setName);
 }
 
-// 6. Event listeners and Initial Setup
-document.getElementById('random-btn').addEventListener('click', () => {
-    chosen = pickRandomMember();
-});
-
-// Load Set 17 by default on page load
+document.getElementById('random-btn').addEventListener('click', rollAllPools);
 loadSetData('set-17');
