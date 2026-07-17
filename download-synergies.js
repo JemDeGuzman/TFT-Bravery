@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 // CONFIGURATION
-const JSON_FILE = './set-files/set-17/set-17-synergy.json'; // Make sure this matches your filename
-const OUTPUT_DIR = './set-files/set-17/icons';
+const JSON_FILE = './set-files/set-18/set-18-synergy.json'; // Make sure this matches your filename
+const OUTPUT_DIR = './set-files/set-18/icons';
 
 if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR, { recursive: true });

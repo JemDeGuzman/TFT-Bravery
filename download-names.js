@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 // CONFIGURATION: Change these depending on which set you are downloading
-const JSON_FILE = './set-files/set-17/set-17-names.json';
-const OUTPUT_DIR = './set-files/set-17/images';
+const JSON_FILE = './set-files/set-18/set-18-names.json';
+const OUTPUT_DIR = './set-files/set-18/images';
 
 if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR, { recursive: true });

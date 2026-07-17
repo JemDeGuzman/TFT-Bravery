@@ -8,7 +8,8 @@ let mainChampionsPool = [];
 let uniqueChampionsPool = [];
 
 const uniques = {
-    'set-17': ["Rhaast", "Tahm Kench", "Morgana", "Graves", "Vex"]
+    'set-17': ["Rhaast", "Tahm Kench", "Morgana", "Graves", "Vex"],
+    'set-18' : ["Draven", "Ivern", "Kha'zix", "Lux", "Malphite", "Maokai", "Rengar", "Taric", "The Elder Dragon", "Zyra"]
 };
 
 let currentSetName = 'set-17';
@@ -211,3 +212,4 @@ function switchSet(setName, event) {
 
 document.getElementById('random-btn').addEventListener('click', rollAllPools);
 loadSetData('set-17');
+loadSetData('set-18');
