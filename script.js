@@ -7,8 +7,12 @@ let uniquesData = [];
 let mainChampionsPool = [];
 let uniqueChampionsPool = [];
 
-const EXCLUDED_UNIQUE_NAMES = ["Rhaast", "Tahm Kench", "Morgana", "Graves", "Vex", "Shen"];
+const uniques = {
+    'set-17': ["Rhaast", "Tahm Kench", "Morgana", "Graves", "Vex"]
+};
+
 let currentSetName = 'set-17';
+const EXCLUDED_UNIQUE_NAMES = uniques[currentSetName] || [];
 
 function loadSetData(setName) {
     currentSetName = setName;
