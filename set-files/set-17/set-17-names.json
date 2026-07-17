@@ -504,6 +504,7 @@
       "icon": "./set-files/set-17/images/shen.png",
       "synergies": [
         "Bulwark",
+        "Timebreaker",
         "Bastion"
       ],
       "cost": 5
