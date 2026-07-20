@@ -3,181 +3,181 @@
     {
       "id": 1,
       "name": "Blossom",
-      "icon": "./set-files/set-17/icons/blossom.svg"
+      "icon": "./set-files/set-18/icons/blossom.svg"
     },
     {
       "id": 2,
       "name": "Coven",
-      "icon": "./set-files/set-17/icons/coven.svg"
+      "icon": "./set-files/set-18/icons/coven.svg"
     },
     {
       "id": 3,
       "name": "Elderwood",
-      "icon": "./set-files/set-17/icons/elderwood.svg"
+      "icon": "./set-files/set-18/icons/elderwood.svg"
     },
     {
       "id": 4,
       "name": "Eldritch",
-      "icon": "./set-files/set-17/icons/eldritch.svg"
+      "icon": "./set-files/set-18/icons/eldritch.svg"
     },
     {
       "id": 5,
       "name": "Fae",
-      "icon": "./set-files/set-17/icons/fae.svg"
+      "icon": "./set-files/set-18/icons/fae.svg"
     },
     {
       "id": 6,
       "name": "Flora Fatalis",
-      "icon": "./set-files/set-17/icons/florafatalis.svg"
+      "icon": "./set-files/set-18/icons/florafatalis.svg"
     },
     {
       "id": 7,
       "name": "Inferno",
-      "icon": "./set-files/set-17/icons/inferno.svg"
+      "icon": "./set-files/set-18/icons/inferno.svg"
     },
     {
       "id": 8,
       "name": "Lunar",
-      "icon": "./set-files/set-17/icons/lunar.svg"
+      "icon": "./set-files/set-18/icons/lunar.svg"
     },
     {
       "id": 9,
       "name": "Primal",
-      "icon": "./set-files/set-17/icons/primal.svg"
+      "icon": "./set-files/set-18/icons/primal.svg"
     },
     {
       "id": 10,
       "name": "Riftbeast",
-      "icon": "./set-files/set-17/icons/riftbeast.svg"
+      "icon": "./set-files/set-18/icons/riftbeast.svg"
     },
     {
       "id": 11,
       "name": "Solar",
-      "icon": "./set-files/set-17/icons/solar.svg"
+      "icon": "./set-files/set-18/icons/solar.svg"
     },
     {
       "id": 12,
       "name": "Sprykin",
-      "icon": "./set-files/set-17/icons/sprykin.svg"
+      "icon": "./set-files/set-18/icons/sprykin.svg"
     }
   ],
   "classes": [
     {
       "id": 1,
       "name": "Adaptor",
-      "icon": "./set-files/set-17/icons/adaptor.svg"
+      "icon": "./set-files/set-18/icons/adaptor.svg"
     },
     {
       "id": 2,
       "name": "Brawler",
-      "icon": "./set-files/set-17/icons/brawler.svg"
+      "icon": "./set-files/set-18/icons/brawler.svg"
     },
     {
       "id": 3,
       "name": "Defender",
-      "icon": "./set-files/set-17/icons/defender.svg"
+      "icon": "./set-files/set-18/icons/defender.svg"
     },
     {
       "id": 4,
       "name": "Executioner",
-      "icon": "./set-files/set-17/icons/executioner.svg"
+      "icon": "./set-files/set-18/icons/executioner.svg"
     },
     {
       "id": 5,
       "name": "Hunter",
-      "icon": "./set-files/set-17/icons/hunter.svg"
+      "icon": "./set-files/set-18/icons/hunter.svg"
     },
     {
       "id": 6,
       "name": "Invoker",
-      "icon": "./set-files/set-17/icons/invoker.svg"
+      "icon": "./set-files/set-18/icons/invoker.svg"
     },
     {
       "id": 7,
       "name": "Juggernaut",
-      "icon": "./set-files/set-17/icons/juggernaut.svg"
+      "icon": "./set-files/set-18/icons/juggernaut.svg"
     },
     {
       "id": 8,
       "name": "Rapidfire",
-      "icon": "./set-files/set-17/icons/rapidfire.svg"
+      "icon": "./set-files/set-18/icons/rapidfire.svg"
     },
     {
       "id": 9,
       "name": "Ravager",
-      "icon": "./set-files/set-17/icons/ravager.svg"
+      "icon": "./set-files/set-18/icons/ravager.svg"
     },
     {
       "id": 10,
       "name": "Spellweaver",
-      "icon": "./set-files/set-17/icons/spellweaver.svg"
+      "icon": "./set-files/set-18/icons/spellweaver.svg"
     },
     {
       "id": 11,
       "name": "Summoner",
-      "icon": "./set-files/set-17/icons/summoner.svg"
+      "icon": "./set-files/set-18/icons/summoner.svg"
     },
     {
       "id": 12,
       "name": "Vanguard",
-      "icon": "./set-files/set-17/icons/vanguard.svg"
+      "icon": "./set-files/set-18/icons/vanguard.svg"
     }
   ],
   "uniques": [
     {
       "id": 1,
       "name": "Apex Predator",
-      "icon": "./set-files/set-17/icons/apexpredator.svg"
+      "icon": "./set-files/set-18/icons/apexpredator.svg"
     },
     {
       "id": 2,
       "name": "Attuned",
-      "icon": "./set-files/set-17/icons/attuned.svg"
+      "icon": "./set-files/set-18/icons/attuned.svg"
     },
     {
       "id": 3,
       "name": "Avatar",
-      "icon": "./set-files/set-17/icons/avatar.svg"
+      "icon": "./set-files/set-18/icons/avatar.svg"
     },
     {
       "id": 4,
       "name": "Bounty Seeker",
-      "icon": "./set-files/set-17/icons/bountyseeker.svg"
+      "icon": "./set-files/set-18/icons/bountyseeker.svg"
     },
     {
       "id": 5,
       "name": "Caustic",
-      "icon": "./set-files/set-17/icons/caustic.svg"
+      "icon": "./set-files/set-18/icons/caustic.svg"
     },
     {
       "id": 6,
       "name": "Emerald Aspect",
-      "icon": "./set-files/set-17/icons/emeraldaspect.svg"
+      "icon": "./set-files/set-18/icons/emeraldaspect.svg"
     },
     {
       "id": 7,
       "name": "Greenfather",
-      "icon": "./set-files/set-17/icons/greenfather.svg"
+      "icon": "./set-files/set-18/icons/greenfather.svg"
     },
     {
       "id": 8,
       "name": "Monolith",
-      "icon": "./set-files/set-17/icons/monolith.svg"
+      "icon": "./set-files/set-18/icons/monolith.svg"
     },
     {
       "id": 9,
       "name": "Old Growth",
-      "icon": "./set-files/set-17/icons/oldgrowth.svg"
+      "icon": "./set-files/set-18/icons/oldgrowth.svg"
     },
     {
       "id": 10,
       "name": "Rival",
-      "icon": "./set-files/set-17/icons/rival.svg"
+      "icon": "./set-files/set-18/icons/rival.svg"
     },
     {
       "id": 11,
       "name": "Thornmaiden",
-      "icon": "./set-files/set-17/icons/thornmaiden.svg"
+      "icon": "./set-files/set-18/icons/thornmaiden.svg"
     }
   ]
 }

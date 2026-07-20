@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Ahri",
-      "icon": "./images/set17/ahri.png",
+      "icon": "./set-files/set-18/images/ahri.png",
       "synergies": [
         "Blossom",
         "Spellweaver"
@@ -13,7 +13,7 @@
     {
       "id": 2,
       "name": "Akali",
-      "icon": "./images/set17/akali.png",
+      "icon": "./set-files/set-18/images/akali.png",
       "synergies": [
         "Inferno",
         "Adaptor",
@@ -24,7 +24,7 @@
     {
       "id": 3,
       "name": "Alistar",
-      "icon": "./images/set17/alistar.png",
+      "icon": "./set-files/set-18/images/alistar.png",
       "synergies": [
         "Elderwood",
         "Brawler"
@@ -34,7 +34,7 @@
     {
       "id": 4,
       "name": "Alune",
-      "icon": "./images/set17/alune.png",
+      "icon": "./set-files/set-18/images/alune.png",
       "synergies": [
         "Attuned",
         "Lunar",
@@ -45,7 +45,7 @@
     {
       "id": 5,
       "name": "Amumu",
-      "icon": "./images/set17/amumu.png",
+      "icon": "./set-files/set-18/images/amumu.png",
       "synergies": [
         "Inferno",
         "Juggernaut"
@@ -55,7 +55,7 @@
     {
       "id": 6,
       "name": "Ancient Sentinel",
-      "icon": "./images/set17/ancientsentinel.png",
+      "icon": "./set-files/set-18/images/ancientsentinel.png",
       "synergies": [
         "Riftbeast",
         "Vanguard",
@@ -66,7 +66,7 @@
     {
       "id": 7,
       "name": "Aphelios",
-      "icon": "./images/set17/aphelios.png",
+      "icon": "./set-files/set-18/images/aphelios.png",
       "synergies": [
         "Lunar",
         "Rapidfire"
@@ -76,7 +76,7 @@
     {
       "id": 8,
       "name": "Ashe",
-      "icon": "./images/set17/ashe.png",
+      "icon": "./set-files/set-18/images/ashe.png",
       "synergies": [
         "Blossom",
         "Hunter"
@@ -86,7 +86,7 @@
     {
       "id": 9,
       "name": "Azir",
-      "icon": "./images/set17/azir.png",
+      "icon": "./set-files/set-18/images/azir.png",
       "synergies": [
         "Eldritch",
         "Executioner",
@@ -97,7 +97,7 @@
     {
       "id": 10,
       "name": "Brambleback",
-      "icon": "./images/set17/brambleback.png",
+      "icon": "./set-files/set-18/images/brambleback.png",
       "synergies": [
         "Riftbeast",
         "Ravager"
@@ -107,7 +107,7 @@
     {
       "id": 11,
       "name": "Caitlyn",
-      "icon": "./images/set17/caitlyn.png",
+      "icon": "./set-files/set-18/images/caitlyn.png",
       "synergies": [
         "Coven",
         "Hunter"
@@ -117,7 +117,7 @@
     {
       "id": 12,
       "name": "Camille",
-      "icon": "./images/set17/camille.png",
+      "icon": "./set-files/set-18/images/camille.png",
       "synergies": [
         "Coven",
         "Ravager"
@@ -127,7 +127,7 @@
     {
       "id": 13,
       "name": "Cassiopeia",
-      "icon": "./images/set17/cassiopeia.png",
+      "icon": "./set-files/set-18/images/cassiopeia.png",
       "synergies": [
         "Coven",
         "Spellweaver"
@@ -137,7 +137,7 @@
     {
       "id": 14,
       "name": "Cinderling",
-      "icon": "./images/set17/cinderling.png",
+      "icon": "./set-files/set-18/images/cinderling.png",
       "synergies": [
         "Riftbeast",
         "Hunter"
@@ -147,7 +147,7 @@
     {
       "id": 15,
       "name": "Diana",
-      "icon": "./images/set17/diana.png",
+      "icon": "./set-files/set-18/images/diana.png",
       "synergies": [
         "Lunar",
         "Ravager",
@@ -158,7 +158,7 @@
     {
       "id": 16,
       "name": "Draven",
-      "icon": "./images/set17/draven.png",
+      "icon": "./set-files/set-18/images/draven.png",
       "synergies": [
         "Bounty Seeker"
       ],
@@ -167,7 +167,7 @@
     {
       "id": 17,
       "name": "Elise",
-      "icon": "./images/set17/elise.png",
+      "icon": "./set-files/set-18/images/elise.png",
       "synergies": [
         "Coven",
         "Vanguard"
@@ -175,9 +175,9 @@
       "cost": 2
     },
     {
-      "id": 18,
+      "id": -18,
       "name": "Ezreal",
-      "icon": "./images/set17/ezreal.png",
+      "icon": "./set-files/set-18/images/ezreal.png",
       "synergies": [
         "Elderwood",
         "Executioner"
@@ -187,7 +187,7 @@
     {
       "id": 19,
       "name": "Fiddlesticks",
-      "icon": "./images/set17/fiddlesticks.png",
+      "icon": "./set-files/set-18/images/fiddlesticks.png",
       "synergies": [
         "Flora Fatalis",
         "Defender",
@@ -198,7 +198,7 @@
     {
       "id": 20,
       "name": "Gnar",
-      "icon": "./images/set17/gnar.png",
+      "icon": "./set-files/set-18/images/gnar.png",
       "synergies": [
         "Elderwood",
         "Sprykin",
@@ -209,7 +209,7 @@
     {
       "id": 21,
       "name": "Gromp",
-      "icon": "./images/set17/gromp.png",
+      "icon": "./set-files/set-18/images/gromp.png",
       "synergies": [
         "Riftbeast",
         "Adaptor"
@@ -219,7 +219,7 @@
     {
       "id": 22,
       "name": "Hecarim",
-      "icon": "./images/set17/hecarim.png",
+      "icon": "./set-files/set-18/images/hecarim.png",
       "synergies": [
         "Elderwood",
         "Vanguard"
@@ -229,7 +229,7 @@
     {
       "id": 23,
       "name": "Ivern",
-      "icon": "./images/set17/ivern.png",
+      "icon": "./set-files/set-18/images/ivern.png",
       "synergies": [
         "Greenfather"
       ],
@@ -238,7 +238,7 @@
     {
       "id": 24,
       "name": "Karma",
-      "icon": "./images/set17/karma.png",
+      "icon": "./set-files/set-18/images/karma.png",
       "synergies": [
         "Blossom",
         "Spellweaver"
@@ -248,7 +248,7 @@
     {
       "id": 25,
       "name": "Kayle",
-      "icon": "./images/set17/kayle.png",
+      "icon": "./set-files/set-18/images/kayle.png",
       "synergies": [
         "Solar",
         "Rapidfire"
@@ -258,7 +258,7 @@
     {
       "id": 26,
       "name": "Kennen",
-      "icon": "./images/set17/kennen.png",
+      "icon": "./set-files/set-18/images/kennen.png",
       "synergies": [
         "Inferno",
         "Executioner"
@@ -268,7 +268,7 @@
     {
       "id": 27,
       "name": "Kha'zix",
-      "icon": "./images/set17/khazix.png",
+      "icon": "./set-files/set-18/images/khazix.png",
       "synergies": [
         "Rival"
       ],
@@ -277,7 +277,7 @@
     {
       "id": 28,
       "name": "Kobuko",
-      "icon": "./images/set17/kobuko.png",
+      "icon": "./set-files/set-18/images/kobuko.png",
       "synergies": [
         "Sprykin",
         "Brawler"
@@ -287,7 +287,7 @@
     {
       "id": 29,
       "name": "Kog'maw",
-      "icon": "./images/set17/kogmaw.png",
+      "icon": "./set-files/set-18/images/kogmaw.png",
       "synergies": [
         "Caustic",
         "Invoker",
@@ -298,7 +298,7 @@
     {
       "id": 30,
       "name": "Krug",
-      "icon": "./images/set17/krug.png",
+      "icon": "./set-files/set-18/images/krug.png",
       "synergies": [
         "Riftbeast",
         "Brawler"
@@ -308,7 +308,7 @@
     {
       "id": 31,
       "name": "LeBlanc",
-      "icon": "./images/set17/leblanc.png",
+      "icon": "./set-files/set-18/images/leblanc.png",
       "synergies": [
         "Elderwood",
         "Spellweaver"
@@ -318,7 +318,7 @@
     {
       "id": 32,
       "name": "Leona",
-      "icon": "./images/set17/leona.png",
+      "icon": "./set-files/set-18/images/leona.png",
       "synergies": [
         "Solar",
         "Defender"
@@ -328,7 +328,7 @@
     {
       "id": 33,
       "name": "Lillia",
-      "icon": "./images/set17/lillia.png",
+      "icon": "./set-files/set-18/images/lillia.png",
       "synergies": [
         "Fae",
         "Defender"
@@ -338,7 +338,7 @@
     {
       "id": 34,
       "name": "Lux",
-      "icon": "./images/set17/lux.png",
+      "icon": "./set-files/set-18/images/lux.png",
       "synergies": [
         "Avatar",
         "Blossom",
@@ -356,7 +356,7 @@
     {
       "id": 35,
       "name": "Malphite",
-      "icon": "./images/set17/malphite.png",
+      "icon": "./set-files/set-18/images/malphite.png",
       "synergies": [
         "Eldritch",
         "Monolith"
@@ -366,7 +366,7 @@
     {
       "id": 36,
       "name": "Maokai",
-      "icon": "./images/set17/maokai.png",
+      "icon": "./set-files/set-18/images/maokai.png",
       "synergies": [
         "Old Growth",
         "Juggernaut"
@@ -376,7 +376,7 @@
     {
       "id": 37,
       "name": "Master Yi",
-      "icon": "./images/set17/masteryi.png",
+      "icon": "./set-files/set-18/images/masteryi.png",
       "synergies": [
         "Blossom",
         "Adaptor"
@@ -386,7 +386,7 @@
     {
       "id": 38,
       "name": "Morgana",
-      "icon": "./images/set17/morgana.png",
+      "icon": "./set-files/set-18/images/morgana.png",
       "synergies": [
         "Coven",
         "Invoker"
@@ -396,7 +396,7 @@
     {
       "id": 39,
       "name": "Murkwolf",
-      "icon": "./images/set17/murkwolf.png",
+      "icon": "./set-files/set-18/images/murkwolf.png",
       "synergies": [
         "Riftbeast",
         "Ravager"
@@ -406,7 +406,7 @@
     {
       "id": 40,
       "name": "Nidalee",
-      "icon": "./images/set17/nidalee.png",
+      "icon": "./set-files/set-18/images/nidalee.png",
       "synergies": [
         "Primal",
         "Adaptor"
@@ -416,7 +416,7 @@
     {
       "id": 41,
       "name": "Ornn",
-      "icon": "./images/set17/ornn.png",
+      "icon": "./set-files/set-18/images/ornn.png",
       "synergies": [
         "Elderwood",
         "Defender"
@@ -426,7 +426,7 @@
     {
       "id": 42,
       "name": "Pebbles",
-      "icon": "./images/set17/pebbles.png",
+      "icon": "./set-files/set-18/images/pebbles.png",
       "synergies": [
         "Riftbeast",
         "Invoker"
@@ -436,7 +436,7 @@
     {
       "id": 43,
       "name": "Rakan",
-      "icon": "./images/set17/rakan.png",
+      "icon": "./set-files/set-18/images/rakan.png",
       "synergies": [
         "Fae",
         "Juggernaut",
@@ -447,7 +447,7 @@
     {
       "id": 44,
       "name": "Rammus",
-      "icon": "./images/set17/rammus.png",
+      "icon": "./set-files/set-18/images/rammus.png",
       "synergies": [
         "Sprykin",
         "Defender"
@@ -457,7 +457,7 @@
     {
       "id": 45,
       "name": "Raptor",
-      "icon": "./images/set17/raptor.png",
+      "icon": "./set-files/set-18/images/raptor.png",
       "synergies": [
         "Riftbeast",
         "Summoner",
@@ -468,7 +468,7 @@
     {
       "id": 46,
       "name": "Rek'Sai",
-      "icon": "./images/set17/reksai.png",
+      "icon": "./set-files/set-18/images/reksai.png",
       "synergies": [
         "Eldritch",
         "Brawler"
@@ -478,7 +478,7 @@
     {
       "id": 47,
       "name": "Rengar",
-      "icon": "./images/set17/rengar.png",
+      "icon": "./set-files/set-18/images/rengar.png",
       "synergies": [
         "Rival"
       ],
@@ -487,7 +487,7 @@
     {
       "id": 48,
       "name": "Scuttlecrab",
-      "icon": "./images/set17/scuttlecrab.png",
+      "icon": "./set-files/set-18/images/scuttlecrab.png",
       "synergies": [
         "Riftbeast",
         "Juggernaut"
@@ -497,7 +497,7 @@
     {
       "id": 49,
       "name": "Sejuani",
-      "icon": "./images/set17/sejuani.png",
+      "icon": "./set-files/set-18/images/sejuani.png",
       "synergies": [
         "Solar",
         "Juggernaut"
@@ -507,7 +507,7 @@
     {
       "id": 50,
       "name": "Sett",
-      "icon": "./images/set17/sett.png",
+      "icon": "./set-files/set-18/images/sett.png",
       "synergies": [
         "Blossom",
         "Brawler"
@@ -517,7 +517,7 @@
     {
       "id": 51,
       "name": "Shen",
-      "icon": "./images/set17/shen.png",
+      "icon": "./set-files/set-18/images/shen.png",
       "synergies": [
         "Inferno",
         "Defender"
@@ -527,7 +527,7 @@
     {
       "id": 52,
       "name": "Sivir",
-      "icon": "./images/set17/sivir.png",
+      "icon": "./set-files/set-18/images/sivir.png",
       "synergies": [
         "Primal",
         "Hunter"
@@ -537,7 +537,7 @@
     {
       "id": 53,
       "name": "Soraka",
-      "icon": "./images/set17/soraka.png",
+      "icon": "./set-files/set-18/images/soraka.png",
       "synergies": [
         "Flora Fatalis",
         "Executioner"
@@ -547,7 +547,7 @@
     {
       "id": 54,
       "name": "Taric",
-      "icon": "./images/set17/taric.png",
+      "icon": "./set-files/set-18/images/taric.png",
       "synergies": [
         "Emerald Aspect"
       ],
@@ -556,7 +556,7 @@
     {
       "id": 55,
       "name": "Teemo",
-      "icon": "./images/set17/teemo.png",
+      "icon": "./set-files/set-18/images/teemo.png",
       "synergies": [
         "Sprykin",
         "Invoker"
@@ -566,7 +566,7 @@
     {
       "id": 56,
       "name": "The Elder Dragon",
-      "icon": "./images/set17/theelderdragon.png",
+      "icon": "./set-files/set-18/images/theelderdragon.png",
       "synergies": [
         "Apex Predator",
         "Riftbeast"
@@ -576,7 +576,7 @@
     {
       "id": 57,
       "name": "Tristana",
-      "icon": "./images/set17/tristana.png",
+      "icon": "./set-files/set-18/images/tristana.png",
       "synergies": [
         "Fae",
         "Sprykin",
@@ -587,7 +587,7 @@
     {
       "id": 58,
       "name": "Varus",
-      "icon": "./images/set17/varus.png",
+      "icon": "./set-files/set-18/images/varus.png",
       "synergies": [
         "Inferno",
         "Rapidfire"
@@ -597,7 +597,7 @@
     {
       "id": 59,
       "name": "Veigar",
-      "icon": "./images/set17/veigar.png",
+      "icon": "./set-files/set-18/images/veigar.png",
       "synergies": [
         "Eldritch",
         "Sprykin",
@@ -608,7 +608,7 @@
     {
       "id": 60,
       "name": "Vi",
-      "icon": "./images/set17/vi.png",
+      "icon": "./set-files/set-18/images/vi.png",
       "synergies": [
         "Primal",
         "Juggernaut"
@@ -618,7 +618,7 @@
     {
       "id": 61,
       "name": "Warwick",
-      "icon": "./images/set17/warwick.png",
+      "icon": "./set-files/set-18/images/warwick.png",
       "synergies": [
         "Eldritch",
         "Ravager"
@@ -628,7 +628,7 @@
     {
       "id": 62,
       "name": "Xayah",
-      "icon": "./images/set17/xayah.png",
+      "icon": "./set-files/set-18/images/xayah.png",
       "synergies": [
         "Elderwood",
         "Fae",
@@ -639,7 +639,7 @@
     {
       "id": 63,
       "name": "Yorick",
-      "icon": "./images/set17/yorick.png",
+      "icon": "./set-files/set-18/images/yorick.png",
       "synergies": [
         "Blossom",
         "Juggernaut",
@@ -650,7 +650,7 @@
     {
       "id": 64,
       "name": "Yunara",
-      "icon": "./images/set17/yunara.png",
+      "icon": "./set-files/set-18/images/yunara.png",
       "synergies": [
         "Blossom",
         "Executioner"
@@ -658,9 +658,9 @@
       "cost": 1
     },
     {
-      "id": 62,
+      "id": 65,
       "name": "Zyra",
-      "icon": "./images/set17/zyra.png",
+      "icon": "./set-files/set-18/images/zyra.png",
       "synergies": [
         "Thornmaiden",
         "Summoner"

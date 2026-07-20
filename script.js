@@ -7,17 +7,20 @@ let uniquesData = [];
 let mainChampionsPool = [];
 let uniqueChampionsPool = [];
 
+// Unique unit lookup map by set
 const uniques = {
     'set-17': ["Rhaast", "Tahm Kench", "Morgana", "Graves", "Vex"],
-    'set-18' : ["Draven", "Ivern", "Kha'zix", "Lux", "Malphite", "Maokai", "Rengar", "Taric", "The Elder Dragon", "Zyra"]
+    'set-18': ["Draven", "Ivern", "Kha'zix", "Lux", "Malphite", "Maokai", "Rengar", "Taric", "The Elder Dragon", "Zyra"]
 };
 
 let currentSetName = 'set-17';
-const EXCLUDED_UNIQUE_NAMES = uniques[currentSetName] || [];
 
 function loadSetData(setName) {
     currentSetName = setName;
     
+    // Dynamically retrieve the correct unique list for the active set
+    const activeExcludedNames = uniques[currentSetName] || [];
+
     const fetchChampions = fetch(`./set-files/${currentSetName}/${currentSetName}-names.json`).then(res => res.json());
     const fetchSynergies = fetch(`./set-files/${currentSetName}/${currentSetName}-synergy.json`).then(res => res.json());
 
@@ -28,9 +31,9 @@ function loadSetData(setName) {
             uniquesData = synData.uniques;
             membersData = champData.champions;
 
-            // Split the roster into Main and Excluded Unique pools
-            mainChampionsPool = membersData.filter(c => !EXCLUDED_UNIQUE_NAMES.includes(c.name));
-            uniqueChampionsPool = membersData.filter(c => EXCLUDED_UNIQUE_NAMES.includes(c.name));
+            // Split the roster using the freshly resolved activeExcludedNames
+            mainChampionsPool = membersData.filter(c => !activeExcludedNames.includes(c.name));
+            uniqueChampionsPool = membersData.filter(c => activeExcludedNames.includes(c.name));
 
             showCardContent(); 
             rollAllPools(); 
@@ -49,25 +52,23 @@ function rollAllPools() {
     const mainChamp = mainChampionsPool[randomMainIdx];
     displayMainChampion(mainChamp);
 
-    // 2. Roll Minor Unique Champion Companion (with a chance to roll nothing)
+    // 2. Roll Minor Unique Champion Companion (or null)
+    const minorContainer = document.getElementById('minor-unique-card');
+
     if (uniqueChampionsPool.length > 0) {
-        // We create a pool that includes the real unique units + an empty choice
-        // Adjust the number of nulls if you want a higher/lower chance of rolling "Nothing"
         const uniqueRollOptions = [...uniqueChampionsPool, null]; 
-        
         const randomUniqueIdx = Math.floor(Math.random() * uniqueRollOptions.length);
         const uniqueChamp = uniqueRollOptions[randomUniqueIdx];
 
-        const minorContainer = document.getElementById('minor-unique-card');
-        
         if (uniqueChamp) {
-            // A real unique champion was rolled -> Show the card and populate it
             minorContainer.classList.remove('hidden');
             displayMinorUniqueChampion(uniqueChamp);
         } else {
-            // The empty slot was rolled -> Hide the minor card cleanly
             minorContainer.classList.add('hidden');
         }
+    } else {
+        // Hide if the current set has no unique champions defined
+        minorContainer.classList.add('hidden');
     }
 }
 
@@ -78,7 +79,6 @@ function displayMainChampion(selectedChampion) {
     mainImg.src = selectedChampion.icon;
     mainImg.alt = selectedChampion.name;
     
-    // Set cost rarity border on main card frame
     const cardElement = document.getElementById('card');
     cardElement.className = `cost-${selectedChampion.cost}`;
 
@@ -89,12 +89,10 @@ function displayMainChampion(selectedChampion) {
     rolesContainer.innerHTML = '';
     displayGroupsSection.innerHTML = '';
 
-    // Render badges below main profile picture
     selectedChampion.synergies.forEach(traitName => {
         rolesContainer.appendChild(createTraitBadge(traitName));
     });
 
-    // Randomize up to two standard traits to build rows out of
     let traitsToDisplay = [...normalTraits];
     if (traitsToDisplay.length > 2) {
         traitsToDisplay = traitsToDisplay.sort(() => 0.5 - Math.random()).slice(0, 2);
@@ -116,7 +114,6 @@ function displayMainChampion(selectedChampion) {
         const teamGrid = document.createElement('div');
         teamGrid.className = 'mini-champ-grid';
 
-        // Filter and SORT teammates from cost level 1 through 5
         const teammates = membersData
             .filter(champ => champ.synergies.includes(traitName))
             .sort((a, b) => a.cost - b.cost);
@@ -140,7 +137,6 @@ function displayMinorUniqueChampion(uniqueChampion) {
 
     const minorRoles = document.getElementById('minor-roles');
     minorRoles.innerHTML = '';
-    uniqueChampion.style = "";
     
     uniqueChampion.synergies.forEach(traitName => {
         minorRoles.appendChild(createTraitBadge(traitName));
@@ -169,7 +165,9 @@ function createTraitBadge(traitName) {
         traitBadge.appendChild(iconImg);
         traitBadge.appendChild(textSpan);
     } else {
+        const textSpan = document.createElement('span');
         textSpan.textContent = traitName;
+        traitBadge.appendChild(textSpan);
     }
     return traitBadge;
 }
@@ -211,5 +209,5 @@ function switchSet(setName, event) {
 }
 
 document.getElementById('random-btn').addEventListener('click', rollAllPools);
+
 loadSetData('set-17');
-loadSetData('set-18');
